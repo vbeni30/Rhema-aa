@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image"
 import { Copy, CheckCircle2 } from "lucide-react"
 import { useState } from "react"
