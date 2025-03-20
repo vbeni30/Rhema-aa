@@ -1,6 +1,5 @@
 "use client";
 
-
 import Image from "next/image"
 import { Copy, CheckCircle2 } from "lucide-react"
 import { useState } from "react"
@@ -140,27 +139,7 @@ export default function BankAccounts() {
           ))}
         </div>
 
-        <div className="mt-12 p-6 bg-[#9B2B3A]/5 rounded-lg border border-[#9B2B3A]/10">
-          <div className="flex items-start gap-4">
-            <div className="p-3 bg-[#9B2B3A]/10 rounded-lg">
-              <svg
-                className="w-6 h-6 text-[#9B2B3A]"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </div>
-          
-          </div>
-        </div>
+ 
       </div>
     </section>
   )
