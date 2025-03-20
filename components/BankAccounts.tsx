@@ -19,7 +19,7 @@ const accounts = [
   {
     bankName: "CBE Bank",
     logo: "https://images.seeklogo.com/logo-png/54/1/commercial-bank-of-ethiopia-logo-png_seeklogo-547506.png",
-    purpose: "Building Fund",
+    purpose: "Tithes & General Offerings",
     details: {
       accountName: "Rhema Church",
       accountNumber: "1000000943006",
@@ -29,7 +29,7 @@ const accounts = [
   {
     bankName: "Abyssinia Bank",
     logo: "https://play-lh.googleusercontent.com/WFk27-v5fRzJlwOTPdQ7LNI9kM6Q1TXaqzLhOzsF5iz8Gu8b6nftCZwgKGM7tZvkUA",
-    purpose: "Missions & Outreach",
+    purpose: "Tithes & General Offerings",
     details: {
       accountName: "Rhema Church",
       accountNumber: "4567-8901-2345-6789",
@@ -64,7 +64,7 @@ export default function BankAccounts() {
                 {/* Bank Logo */}
                 <div className="w-40 h-20 relative flex-shrink-0 bg-white rounded-lg p-4">
                   <Image
-                    src={account.logo || "/placeholder.svg"}
+                    src={account.logo || "/placeholder.svg"}  // Ensure logo has valid URL or fallback image
                     alt={account.bankName}
                     width={160} // Specify width
                     height={80} // Specify height
