@@ -1,27 +1,24 @@
-import Link from "next/link";
-import {
-  BookOpenIcon, // For "Our Beliefs"
-  BuildingLibraryIcon, // For "Our Church"
-  FlagIcon, // For "Our Mission"
-} from "@heroicons/react/24/outline"; // Import the icons you need
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBookBible, faChurch, faCross } from "@fortawesome/free-solid-svg-icons"
+import Link from "next/link"
 
 const features = [
   {
     title: "Our Beliefs",
     description: "Worry Ends When Faith Begins. The Magnificent Story of a Life-Changing Journey to God.",
-    icon: BookOpenIcon, // Replaced with Heroicon
+    icon: faBookBible, 
   },
   {
     title: "Our Church",
     description: "Worry Ends When Faith Begins. The Magnificent Story of a Life-Changing Journey to God.",
-    icon: BuildingLibraryIcon, // Replaced with Heroicon
+    icon: faChurch, 
   },
   {
     title: "Our Mission",
     description: "Worry Ends When Faith Begins. The Magnificent Story of a Life-Changing Journey to God.",
-    icon: FlagIcon, // Replaced with Heroicon
+    icon: faCross,
   },
-];
+]
 
 export default function WhoWeAre() {
   return (
@@ -40,7 +37,11 @@ export default function WhoWeAre() {
             data-aos="fade-up"
             data-aos-delay={index * 100}
           >
-            <feature.icon className="w-8 h-8 mb-8 text-gray-600" /> {/* Adjusted size here */}
+            <FontAwesomeIcon
+              icon={feature.icon}
+              size="sm"
+              className="mb-8 text-gray-600"
+            />
             <h3 className="font-serif text-2xl font-normal mb-6 text-gray-900">{feature.title}</h3>
             <p className="text-base leading-relaxed text-gray-600 mb-6">{feature.description}</p>
             <Link href="#" className="text-[#4688D9] hover:text-[#8a2533] text-sm inline-flex items-center gap-2">
@@ -50,5 +51,5 @@ export default function WhoWeAre() {
         ))}
       </div>
     </section>
-  );
+  )
 }
