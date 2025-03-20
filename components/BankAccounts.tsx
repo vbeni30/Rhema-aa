@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 const accounts = [
   {
     bankName: "Birhan Bank",
-    logo: "https://z-p3-scontent.fadd2-1.fna.fbcdn.net/v/t39.30808-6/305638312_622417705904532_3773658006779958146_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=AF8o_HkZ8oEQ7kNvgHrXyJ0&_nc_oc=AdmNSAO7KMgEJlR5GlHmJWzgCiTPQx5Kq-bgQ-MJwiy_hgvQaR_JWIfKbw16t-rZJrs&_nc_zt=23&_nc_ht=z-p3-scontent.fadd2-1.fna&_nc_gid=TuFN3iNfWpm87LTyWTpb_Q&oh=00_AYGNkoaHMDROX8oTN8QQxyUxBdJim4v7Pzma07trN-UGhA&oe=67E1E458",
+    logo: "/birihan.png",
     purpose: "Tithes & General Offerings",
     details: {
       accountName: "Rhema Church",
@@ -18,8 +18,8 @@ const accounts = [
   },
   {
     bankName: "CBE Bank",
-    logo: "https://images.seeklogo.com/logo-png/54/1/commercial-bank-of-ethiopia-logo-png_seeklogo-547506.png",
-    purpose: "Tithes & General Offerings",
+    logo: "/cbe.png",
+    purpose: "Building Fund",
     details: {
       accountName: "Rhema Church",
       accountNumber: "1000000943006",
@@ -28,8 +28,8 @@ const accounts = [
   },
   {
     bankName: "Abyssinia Bank",
-    logo: "https://play-lh.googleusercontent.com/WFk27-v5fRzJlwOTPdQ7LNI9kM6Q1TXaqzLhOzsF5iz8Gu8b6nftCZwgKGM7tZvkUA",
-    purpose: "Tithes & General Offerings",
+    logo: "/Abyssinia.png",
+    purpose: "Missions & Outreach",
     details: {
       accountName: "Rhema Church",
       accountNumber: "4567-8901-2345-6789",
@@ -61,18 +61,16 @@ export default function BankAccounts() {
           {accounts.map((account, index) => (
             <div key={index} className="bg-gray-50 rounded-xl p-6 transition-all hover:shadow-md">
               <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-                {/* Bank Logo */}
                 <div className="w-40 h-20 relative flex-shrink-0 bg-white rounded-lg p-4">
                   <Image
-                    src={account.logo || "/placeholder.svg"}  // Ensure logo has valid URL or fallback image
+                    src={account.logo || "/placeholder.svg"}
                     alt={account.bankName}
-                    width={160} // Specify width
-                    height={80} // Specify height
+                    width={160}
+                    height={80}
                     className="object-contain p-2"
                   />
                 </div>
 
-                {/* Account Details */}
                 <div className="flex-grow grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label className="text-sm text-gray-500">Purpose</label>
