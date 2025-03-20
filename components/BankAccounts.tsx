@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
-import { Copy, CheckCircle2 } from "lucide-react";
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import Image from "next/image"
+import { Copy, CheckCircle2 } from "lucide-react"
+import { useState } from "react"
+import { Button } from "@/components/ui/button"
 
 const accounts = [
   {
@@ -36,16 +36,16 @@ const accounts = [
       branchCode: "157245554",
     },
   },
-];
+]
 
 export default function BankAccounts() {
-  const [copiedField, setCopiedField] = useState<string | null>(null);
+  const [copiedField, setCopiedField] = useState<string | null>(null)
 
   const handleCopy = (text: string, field: string) => {
-    navigator.clipboard.writeText(text);
-    setCopiedField(field);
-    setTimeout(() => setCopiedField(null), 2000);
-  };
+    navigator.clipboard.writeText(text)
+    setCopiedField(field)
+    setTimeout(() => setCopiedField(null), 2000)
+  }
 
   return (
     <section className="py-24 px-8 bg-white">
@@ -66,7 +66,8 @@ export default function BankAccounts() {
                   <Image
                     src={account.logo || "/placeholder.svg"}
                     alt={account.bankName}
-                    fill
+                    width={160} // Specify width
+                    height={80} // Specify height
                     className="object-contain p-2"
                   />
                 </div>
@@ -172,5 +173,5 @@ export default function BankAccounts() {
         </div>
       </div>
     </section>
-  );
+  )
 }
