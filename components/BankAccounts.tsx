@@ -13,27 +13,27 @@ const accounts = [
     details: {
       accountName: "Rhema Church",
       accountNumber: "160009000278",
-      branchCode: "087654321",
+      
     },
   },
   {
     bankName: "CBE Bank",
     logo: "/cbe.png",
-    purpose: "Building Fund",
+    purpose: "Tithes & General Offerings",
     details: {
       accountName: "Rhema Church",
       accountNumber: "1000000943006",
-      branchCode: "087654322",
+      
     },
   },
   {
     bankName: "Abyssinia Bank",
     logo: "/Abyssinia.png",
-    purpose: "Missions & Outreach",
+    purpose: "Tithes & General Offerings",
     details: {
       accountName: "Rhema Church",
-      accountNumber: "4567-8901-2345-6789",
-      branchCode: "157245554",
+      accountNumber: "157245554",
+      
     },
   },
 ]
