@@ -6,17 +6,17 @@ const features = [
   {
     title: "Our Beliefs",
     description: "Worry Ends When Faith Begins. The Magnificent Story of a Life-Changing Journey to God.",
-    icon: faBookBible, // Use imported icon here
+    icon: faBookBible,
   },
   {
     title: "Our Church",
     description: "Worry Ends When Faith Begins. The Magnificent Story of a Life-Changing Journey to God.",
-    icon: faChurch, // Use imported icon here
+    icon: faChurch,
   },
   {
     title: "Our Mission",
     description: "Worry Ends When Faith Begins. The Magnificent Story of a Life-Changing Journey to God.",
-    icon: faCross, // Use imported icon here
+    icon: faCross,
   },
 ]
 
@@ -39,7 +39,7 @@ export default function WhoWeAre() {
           >
             <FontAwesomeIcon
               icon={feature.icon}
-              size="xs" // Adjusted to "xs" size for smaller icons
+              size="2x" // Adjusted to a larger size (you can try xs, sm, 2x, 3x, etc.)
               className="mb-8 text-gray-600"
             />
             <h3 className="font-serif text-2xl font-normal mb-6 text-gray-900">{feature.title}</h3>
