@@ -39,7 +39,7 @@ export default function WhoWeAre() {
           >
             <FontAwesomeIcon
               icon={feature.icon}
-              size="1x" // You can adjust the size as needed
+              size="sm" // Adjusted to smaller size
               className="mb-8 text-gray-600"
             />
             <h3 className="font-serif text-2xl font-normal mb-6 text-gray-900">{feature.title}</h3>
@@ -53,4 +53,3 @@ export default function WhoWeAre() {
     </section>
   )
 }
-
