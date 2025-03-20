@@ -1,24 +1,23 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBookBible, faChurch, faCross } from "@fortawesome/free-solid-svg-icons"
-import Link from "next/link"
+import Link from "next/link";
+import { BookOpen, Church, Cross } from "lucide-react"; // Import Lucide icons
 
 const features = [
   {
     title: "Our Beliefs",
     description: "Worry Ends When Faith Begins. The Magnificent Story of a Life-Changing Journey to God.",
-    icon: faBookBible, 
+    icon: BookOpen, // Replaced with Lucide icon
   },
   {
     title: "Our Church",
     description: "Worry Ends When Faith Begins. The Magnificent Story of a Life-Changing Journey to God.",
-    icon: faChurch, 
+    icon: Church, // Replaced with Lucide icon
   },
   {
     title: "Our Mission",
     description: "Worry Ends When Faith Begins. The Magnificent Story of a Life-Changing Journey to God.",
-    icon: faCross,
+    icon: Cross, // Replaced with Lucide icon
   },
-]
+];
 
 export default function WhoWeAre() {
   return (
@@ -37,11 +36,7 @@ export default function WhoWeAre() {
             data-aos="fade-up"
             data-aos-delay={index * 100}
           >
-            <FontAwesomeIcon
-              icon={feature.icon}
-              size="sm"
-              className="mb-8 text-gray-600"
-            />
+            <feature.icon className="w-8 h-8 mb-8 text-gray-600" /> {/* Adjusted size here */}
             <h3 className="font-serif text-2xl font-normal mb-6 text-gray-900">{feature.title}</h3>
             <p className="text-base leading-relaxed text-gray-600 mb-6">{feature.description}</p>
             <Link href="#" className="text-[#4688D9] hover:text-[#8a2533] text-sm inline-flex items-center gap-2">
@@ -51,5 +46,5 @@ export default function WhoWeAre() {
         ))}
       </div>
     </section>
-  )
+  );
 }
