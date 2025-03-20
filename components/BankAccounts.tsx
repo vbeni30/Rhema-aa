@@ -1,5 +1,6 @@
 "use client";
 
+
 import Image from "next/image"
 import { Copy, CheckCircle2 } from "lucide-react"
 import { useState } from "react"
@@ -157,16 +158,7 @@ export default function BankAccounts() {
                 ></path>
               </svg>
             </div>
-            <div>
-              <h4 className="text-lg font-medium mb-2">Reference Format</h4>
-              <p className="text-gray-600">
-                Please use the following format for your reference:{" "}
-                <span className="font-medium">SURNAME + INITIAL + PURPOSE</span>
-                <br />
-                Example: <span className="font-medium">SMITHJ TITHE</span> or{" "}
-                <span className="font-medium">SMITHJ BUILDING</span>
-              </p>
-            </div>
+          
           </div>
         </div>
       </div>
