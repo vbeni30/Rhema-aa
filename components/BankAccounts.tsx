@@ -7,33 +7,33 @@ import { Button } from "@/components/ui/button"
 
 const accounts = [
   {
-    bankName: "CBE",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fnb-logo-8Hs5Ij8Hs5Ij.png",
+    bankName: "Birhan Bank",
+    logo: "https://z-p3-scontent.fadd2-1.fna.fbcdn.net/v/t39.30808-6/305638312_622417705904532_3773658006779958146_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=AF8o_HkZ8oEQ7kNvgHrXyJ0&_nc_oc=AdmNSAO7KMgEJlR5GlHmJWzgCiTPQx5Kq-bgQ-MJwiy_hgvQaR_JWIfKbw16t-rZJrs&_nc_zt=23&_nc_ht=z-p3-scontent.fadd2-1.fna&_nc_gid=TuFN3iNfWpm87LTyWTpb_Q&oh=00_AYGNkoaHMDROX8oTN8QQxyUxBdJim4v7Pzma07trN-UGhA&oe=67E1E458",
     purpose: "Tithes & General Offerings",
     details: {
-      accountName: "Rhema Church Ministry",
-      accountNumber: "1234-5678-9012-3456",
+      accountName: "Rhema Church",
+      accountNumber: "160009000278",
       branchCode: "087654321",
     },
   },
   {
-    bankName: "Birhan Bank",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/standard-bank-logo-YbHKzwYbHKzw.png",
+    bankName: "CBE Bank",
+    logo: "https://images.seeklogo.com/logo-png/54/1/commercial-bank-of-ethiopia-logo-png_seeklogo-547506.png",
     purpose: "Building Fund",
     details: {
-      accountName: "Rhema Church Building",
-      accountNumber: "9876-5432-1098-7654",
+      accountName: "Rhema Church",
+      accountNumber: "1000000943006",
       branchCode: "087654322",
     },
   },
   {
     bankName: "Abyssinia Bank",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/absa-logo-N8F9TkN8F9Tk.png",
+    logo: "https://play-lh.googleusercontent.com/WFk27-v5fRzJlwOTPdQ7LNI9kM6Q1TXaqzLhOzsF5iz8Gu8b6nftCZwgKGM7tZvkUA",
     purpose: "Missions & Outreach",
     details: {
-      accountName: "Rghema Church Missions",
+      accountName: "Rhema Church",
       accountNumber: "4567-8901-2345-6789",
-      branchCode: "087654323",
+      branchCode: "157245554",
     },
   },
 ]
