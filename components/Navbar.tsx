@@ -52,7 +52,7 @@ export default function Navbar() {
               alt="Rhema Church"
               width={420}
               height={200}
-              className="h-10 w-auto"
+              className="w-[150px] h-[50px]"
             />
           </Link>
 
