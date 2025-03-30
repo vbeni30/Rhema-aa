@@ -50,8 +50,8 @@ export default function Navbar() {
             <Image
               src="/rhema.webp"
               alt="Rhema Church"
-              width={100}
-              height={50}
+              width={80}
+              height={80}
               className="w-[80px] h-[80px]"
             />
           </Link>
