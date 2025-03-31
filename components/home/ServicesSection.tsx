@@ -4,7 +4,6 @@ import { useRef } from "react"
 import Link from "next/link"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { Clock, MapPin, ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
 
 const services = [
   {
@@ -92,10 +91,10 @@ export default function ServicesSection() {
           className="mt-16 text-center"
         >
           <Link href="/services">
-            <Button className="bg-white text-black hover:bg-gray-200 rounded-full px-8 py-6 text-lg">
-              View All Services
+            <button className="inline-flex items-center justify-center rounded-full px-8 py-6 text-lg bg-transparent border border-white/20 text-white transition-colors hover:bg-white/10">
+              Our Services
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            </button>
           </Link>
         </motion.div>
       </div>
@@ -133,9 +132,9 @@ function ServiceCard({ service, index }: { service: any; index: number }) {
       <p className="text-gray-400 mb-6 flex-grow">{service.description}</p>
 
       <Link href="/services" className="mt-auto">
-        <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 w-full">
+        <button className="inline-flex w-full items-center justify-center rounded-md px-4 py-2 bg-transparent border border-white/20 text-white transition-colors hover:bg-white/10">
           Learn More
-        </Button>
+        </button>
       </Link>
     </motion.div>
   )
