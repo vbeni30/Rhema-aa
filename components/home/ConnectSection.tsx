@@ -52,7 +52,7 @@ export default function ConnectSection() {
                 />
               </div>
 
-              <Button className="bg-white text-black hover:bg-gray-200 w-full h-12">
+              <Button className="bg-white text-black hover:bg-white/90 w-full h-12">
                 Subscribe
                 <Mail className="ml-2 h-4 w-4" />
               </Button>
@@ -98,10 +98,10 @@ export default function ConnectSection() {
             </div>
 
             <Link href="/about">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 w-full">
+              <button className="inline-flex w-full items-center justify-center rounded-md px-4 py-2 bg-transparent border border-white/20 text-white transition-colors hover:bg-white/10">
                 Plan Your Visit
                 <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              </button>
             </Link>
           </motion.div>
         </div>
