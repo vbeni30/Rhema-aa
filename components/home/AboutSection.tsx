@@ -64,8 +64,12 @@ export default function AboutSection() {
               </Link>
 
               <Link href="/services">
-                <Button variant="outline" className="border-white text-white hover:bg-white/10 rounded-full px-6">
+                <Button
+                  variant="outline"
+                  className="bg-transparent border border-white/30 text-white hover:bg-white/10 hover:border-white rounded-full px-6 transition-all duration-300"
+                >
                   Our Services
+                  <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
             </div>
